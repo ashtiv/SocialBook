@@ -12,7 +12,8 @@ import random
 
 # @login_required(login_url='signin')
 def index(request):
-    return HttpResponse('<h1>welcome</h1>')
+    return render(request, 'index.html')
+
     # user_object = User.objects.get(username=request.user.username)
     # user_profile = Profile.objects.get(user=user_object)
 
